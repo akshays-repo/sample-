@@ -1,0 +1,201 @@
+.provider{
+    .header{
+        @include flex(flex-end , center);
+        margin-bottom: 15px;
+        @include breakpoint(xs) {
+          @include direction(column);
+          align-items: flex-start;
+          .provider-head {
+            margin-bottom: 10px;
+            align-items: flex-start;
+            button {
+width: 175px;
+            }
+          }
+        }
+    }
+}
+.appointment-time{
+  .header{
+    margin: 15px 0px;
+
+  }    .item{
+    margin:50px 0px;
+    .switch-section{
+      margin-top: 10px
+    }
+  }
+  .from-to {
+    @include formTo;
+  }
+}
+
+
+.appointment-type {
+  .header {
+    @include flex(space-between, center);
+    padding: 10px;
+    .plus-button {
+      border: none;
+      background-color: #57beff;
+      cursor: pointer;
+      border-radius: 10%;
+      &:hover {
+        background-color: #15558d;
+      }
+    }
+  }
+}
+.schedule-time {
+  // padding: 0px 30px 0;
+  .breadcrumb {
+    margin: 0;
+    .breadcrumb-nav {
+      height: auto;
+      padding: 15px 0;
+    }
+  }
+  .left-side {
+    background-color: $container-background;
+    padding: 15px;
+  }
+  .right-side {
+    padding-left: 30px;
+    .ant-table-content {
+      .selectBox {
+        .ant-select-selector {
+          background-color: transparent;
+          border: none;
+          outline: none;
+        }
+      }
+
+    }
+  }
+  .providerFilter {
+    .search {
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.custom-field{
+  .inner-box {
+    .bookAppointment {
+      background: #f5f5f5;
+      @include border-radius(10px);
+      padding: 15px;
+    }
+    .form-to {
+      @include formTo
+    }
+    .full-width-table {
+      .ant-table-wrapper {
+        overflow-x: scroll;
+      }
+    }
+    .ant-table-pagination.ant-pagination {
+      margin: 25px 0;
+    }
+    .appointment-time .item .switch-section {
+      margin-top: 20px;
+    } 
+    .rightButtons {
+      @include flex(flex-end, flex-end);
+      .req {
+        color: #c53639;
+    font-size: 13px;
+      }
+    }
+    .custButtons {
+      button {
+        display: block;
+      }
+      .view-button {
+        padding: 10px 25px;
+      }
+      .edit-button {
+        margin-left: auto;
+      }
+      
+    }
+  }
+}
+.ant-table-pagination.ant-pagination {
+  margin: 25px 0;
+}
+.appointment-time .item .switch-section {
+  margin-top: 20px;
+}
+.login__form {
+  .add-field-box {
+    display: flex;
+    .ant-switch-checked {
+      background-color: #52c41a;
+      .ant-switch-inner{
+        min-width: 5rem;
+      }
+    }
+    .ant-switch-inner {
+      min-width: 5rem;
+    }
+  }
+
+}
+.addOption {
+  // .ant-form-item {
+  //   flex-direction: column;
+  // }
+
+  .ant-form-item-label {
+    text-align: left;
+  }
+  .ant-col-sm-offset-4 {
+    margin-left: 0;
+  }
+}
+.appt-type-select {
+  .ant-select-selection-item {
+    background: #def0ff;
+    border: 1px solid #def0ff;
+  }
+}
+// .switch-section {
+//   .ant-space {
+//     display: flex;
+//     flex-direction: row;
+//     .ant-space-item {
+//       @include margin-padding(5px, 0);
+//     }
+//   }
+// }
+.ant-modal-content {
+  .MuiFormControl-root {
+    width: 100%;
+  }
+  .ant-btn {
+    &:hover {
+      color: #fff;
+    }
+  }
+  }
+
+  .widget_body {
+.ant-card-body {
+  padding: 10px;
+  text-align: center;
+  p {
+    padding-top: 8px;
+  }
+}
+button {
+  border: 1px solid #e4eaec;
+}
+  }
+  .proSearchmbl {
+   .ant-space-item {
+      min-width: 100px;
+    }
+  }
